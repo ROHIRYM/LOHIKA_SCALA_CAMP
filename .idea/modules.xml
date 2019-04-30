@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala camp.iml" filepath="$PROJECT_DIR$/.idea/modules/scala camp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Scala camp.iml" filepath="$PROJECT_DIR$/.idea/modules/Scala camp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lohika_scala_camp-build.iml" filepath="$PROJECT_DIR$/.idea/modules/lohika_scala_camp-build.iml" />
     </modules>
   </component>
 </project>
