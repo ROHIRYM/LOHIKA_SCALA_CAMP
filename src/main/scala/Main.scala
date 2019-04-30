@@ -13,12 +13,12 @@ object Main extends App {
   def retry[A](block: () => A,
                acceptResult: A => Boolean,
                retries: List[FiniteDuration]): A = {
-    Thread.sleep(retries.head.toMillis)
     val res = block()
     println("Current res:" + res)
-    if (acceptResult(res) || retries.tail.isEmpty) {
+    if (acceptResult(res) || retries.isEmpty) {
       res
     } else {
+      Thread.sleep(retries.head.toMillis)
       retry(block, acceptResult, retries.tail)
     }
   }
